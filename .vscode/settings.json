@@ -8,6 +8,7 @@
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
   "python.terminal.activateEnvironment": false,
+  "terminal.integrated.defaultProfile.linux": "bash",
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
