@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Unit test / coverage reports
+.pytest_cache
+.coverage
+
+# Virtual environment
+.venv
+
+# VSCode
+.vscode/*.log
+
+# Schema Validator scripts
+schema_validator/dbcheck/

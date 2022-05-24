@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - setup-python-project-vscode-extensions:/home/python/.vscode-server/extensions
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+volumes:
+  setup-python-project-vscode-extensions:
+

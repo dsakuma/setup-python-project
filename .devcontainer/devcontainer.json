@@ -1,0 +1,18 @@
+{
+  "name": "setup-python-project",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+    "docker-compose-override.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "extensions": [
+    "bungcip.better-toml",
+    "davidanson.vscode-markdownlint",
+    "EditorConfig.EditorConfig",
+    "ms-python.python",
+    "ms-vscode.makefile-tools",
+    "njpwerner.autodocstring"
+  ],
+  "postCreateCommand": "pipenv install --dev"
+}

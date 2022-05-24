@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.pytest_cache": true,
+    "**/__pycache__": true,
+    ".vscode/*log": true
+  },
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.terminal.activateEnvironment": false,
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    }
+  }
+}

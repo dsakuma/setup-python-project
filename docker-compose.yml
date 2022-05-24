@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    command: python src/app.py
+    entrypoint: ''
+    environment:
+      HELLO_WORLD: $HELLO_WORLD
+      PIPENV_VENV_IN_PROJECT: 1
+    hostname: app
+    networks:
+      - setup-python-project-network
+    volumes:
+      - .:/app:cached
+      - setup-python-project-site-packages:/usr/local/lib/python3.8/site-packages
+    working_dir: /app
+
+volumes:
+  setup-python-project-site-packages:
+
+networks:
+  setup-python-project-network:
+    name: setup-python-project-network

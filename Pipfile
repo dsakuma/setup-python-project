@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "~=2.27"
+SQLAlchemy = "~=1.4"
+PyMySQL = "~=1.0"
+cryptography = "~=37.0"
+pytest = "*"
+
+[dev-packages]
+black = "~=22.3"
+flake8 = "~=4.0"
+isort = "~=5.10"
