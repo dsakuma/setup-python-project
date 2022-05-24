@@ -16,7 +16,7 @@ services:
       - setup-python-project-network
     volumes:
       - .:/app:cached
-      - setup-python-project-site-packages:/usr/local/lib/python3.8/site-packages
+      - setup-python-project-site-packages:/usr/local/lib/python3.10/site-packages
     working_dir: /app
 
 volumes:

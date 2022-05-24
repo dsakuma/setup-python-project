@@ -14,5 +14,5 @@
     "ms-vscode.makefile-tools",
     "njpwerner.autodocstring"
   ],
-  "postCreateCommand": "pipenv install --dev"
+  "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip"
 }
