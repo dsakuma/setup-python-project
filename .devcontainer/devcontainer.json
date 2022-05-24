@@ -11,7 +11,6 @@
     "davidanson.vscode-markdownlint",
     "EditorConfig.EditorConfig",
     "ms-python.python",
-    "ms-vscode.makefile-tools",
     "njpwerner.autodocstring"
   ],
   "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip"

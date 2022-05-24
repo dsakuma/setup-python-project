@@ -1,9 +1,8 @@
 {
-    "recommendations": [
-        "bungcip.better-toml",
-        "davidanson.vscode-markdownlint",
-        "ms-python.python",
-        "ms-vscode.makefile-tools",
-        "njpwerner.autodocstring"
-    ]
+  "recommendations": [
+    "bungcip.better-toml",
+    "davidanson.vscode-markdownlint",
+    "ms-python.python",
+    "njpwerner.autodocstring"
+  ]
 }
