@@ -2,6 +2,7 @@
   "recommendations": [
     "bungcip.better-toml",
     "davidanson.vscode-markdownlint",
+    "EditorConfig.EditorConfig",
     "ms-python.python",
     "njpwerner.autodocstring"
   ]
