@@ -34,6 +34,9 @@ RUN sudo apt-get update && \
 RUN mkdir -p /home/python/.vscode-server/extensions \
   && chown -R python \
   /home/python/.vscode-server
+RUN mkdir -p /home/python/.cache/pre-commit \
+  && chown -R python \
+  /home/python/.cache/pre-commit
 
 # TEST
 FROM base as test
