@@ -1,8 +1,8 @@
 {
   "name": "setup-python-project",
   "dockerComposeFile": [
-    "../docker-compose.yml",
-    "docker-compose-override.yml"
+    "../docker-compose.yaml",
+    "docker-compose-override.yaml"
   ],
   "service": "app",
   "workspaceFolder": "/app",
