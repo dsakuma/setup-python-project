@@ -4,6 +4,7 @@
     "davidanson.vscode-markdownlint",
     "EditorConfig.EditorConfig",
     "ms-python.python",
-    "njpwerner.autodocstring"
+    "njpwerner.autodocstring",
+    "redhat.vscode-yaml"
   ]
 }

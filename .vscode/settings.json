@@ -8,6 +8,11 @@
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
   "python.terminal.activateEnvironment": false,
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.testing.pytestEnabled": true,
   "terminal.integrated.defaultProfile.linux": "bash",
   "[python]": {
     "editor.codeActionsOnSave": {
