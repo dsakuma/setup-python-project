@@ -14,5 +14,5 @@
     "njpwerner.autodocstring",
     "redhat.vscode-yaml"
   ],
-  "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip"
+  "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip && pre-commit install"
 }
