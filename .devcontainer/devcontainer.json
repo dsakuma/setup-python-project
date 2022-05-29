@@ -1,11 +1,8 @@
 {
-  "name": "setup-python-project",
   "dockerComposeFile": [
     "../docker-compose.yaml",
     "docker-compose-override.yaml"
   ],
-  "service": "app",
-  "workspaceFolder": "/app",
   "extensions": [
     "bungcip.better-toml",
     "davidanson.vscode-markdownlint",
@@ -14,5 +11,8 @@
     "njpwerner.autodocstring",
     "redhat.vscode-yaml"
   ],
-  "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip && pre-commit install"
+  "name": "setup-python-project",
+  "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip && pre-commit install",
+  "service": "app",
+  "workspaceFolder": "/app"
 }

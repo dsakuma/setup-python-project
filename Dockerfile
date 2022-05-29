@@ -6,10 +6,6 @@ RUN apt-get update && \
   apt-get install -y \
   sudo
 
-# RUN adduser python sudo
-# RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-# RUN usermod python -s /bin/bash
-
 ARG USERNAME=python
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID

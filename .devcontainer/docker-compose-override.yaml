@@ -2,7 +2,7 @@ version: '3.8'
 services:
   app:
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      # - /var/run/docker.sock:/var/run/docker.sock
       - setup-python-project-cache-pre-commit:/home/python/.cache/pre-commit
       - setup-python-project-vscode-extensions:/home/python/.vscode-server/extensions
 
