@@ -22,7 +22,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 USER $USERNAME
 
 RUN pip install --user pipenv
-ENV PATH=$PATH:/home/python/.local/bin
+ENV PATH=$PATH:/home/$USERNAME/.local/bin
 ENV PATH=.venv/bin:$PATH
 
 # DEV
@@ -31,21 +31,21 @@ RUN sudo apt-get update && \
   sudo apt-get install -y \
   git \
   make
-RUN mkdir -p /home/python/.vscode-server/extensions \
-  && chown -R python \
-  /home/python/.vscode-server
-RUN mkdir -p /home/python/.cache/pre-commit \
-  && chown -R python \
-  /home/python/.cache/pre-commit
+RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
+  && chown -R $USERNAME \
+  /home/$USERNAME/.vscode-server
+RUN mkdir -p /home/$USERNAME/.cache/pre-commit \
+  && chown -R $USERNAME \
+  /home/$USERNAME/.cache/pre-commit
 
 # TEST
 FROM base as test
-COPY --chown=python:python . /app
+COPY --chown=$USERNAME:$USERNAME . /app
 RUN pipenv install --dev
 CMD ["pytest", "./tests"]
 
 # PROD
 FROM base as runtime
-COPY --chown=python:python . /app
+COPY --chown=$USERNAME:$USERNAME . /app
 RUN pipenv sync
 CMD ["python", "src/app.py"]
