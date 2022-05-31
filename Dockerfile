@@ -1,3 +1,5 @@
+ARG USERNAME=python
+
 # BASE
 FROM python:3.10-slim as base
 WORKDIR /app
@@ -6,9 +8,10 @@ RUN apt-get update && \
   apt-get install -y \
   sudo
 
-ARG USERNAME=python
+ARG USERNAME
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
+ENV PIPENV_VENV_IN_PROJECT=1
 
 RUN groupadd --gid $USER_GID $USERNAME \
   && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
