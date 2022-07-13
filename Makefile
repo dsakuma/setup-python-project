@@ -1,5 +1,8 @@
 .DEFAULT_GOAL := run
-.PHONY: run test
+.PHONY: coverage run test
+
+coverage:
+	pytest --cov=./src ./tests
 
 run:
 	python src/app.py
