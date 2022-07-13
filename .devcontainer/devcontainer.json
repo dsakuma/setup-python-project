@@ -12,7 +12,7 @@
     "redhat.vscode-yaml"
   ],
   "name": "setup-python-project",
-  "postCreateCommand": "pipenv install --dev && python -m pip install --upgrade pip && pre-commit install",
+  "postCreateCommand": "./.devcontainer/post_create_command.sh",
   "service": "app",
   "workspaceFolder": "/app"
 }

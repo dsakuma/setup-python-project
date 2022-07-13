@@ -2,5 +2,9 @@
 profile = "black"
 
 [tool.pyright]
-venvPath = "."
+extraPaths = [".", "src", "tests"]
 venv = ".venv"
+venvPath = "."
+
+[tool.pytest.ini_options]
+pythonpath = [".", "src", "tests"]

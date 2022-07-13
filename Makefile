@@ -5,4 +5,4 @@ run:
 	python src/app.py
 
 test:
-	python -m pytest -vvs ./tests
+	pytest -vvs ./tests
