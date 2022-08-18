@@ -5,7 +5,7 @@ coverage:
 	pytest --cov=./src ./tests
 
 run:
-	python src/app.py
+	python src/main.py
 
 test:
 	pytest -vvs ./tests

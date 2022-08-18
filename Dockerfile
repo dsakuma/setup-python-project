@@ -47,4 +47,4 @@ FROM base as runtime
 ARG USERNAME
 COPY --chown=$USERNAME:$USERNAME . /app
 RUN pipenv sync
-CMD ["python", "src/app.py"]
+CMD ["python", "src/main.py"]
