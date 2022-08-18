@@ -7,6 +7,7 @@
   },
   "python.analysis.typeCheckingMode": "basic",
   "python.formatting.provider": "black",
+  "python.linting.banditEnabled": true,
   "python.linting.flake8Enabled": true,
   "python.terminal.activateEnvironment": false,
   "python.testing.pytestArgs": [
