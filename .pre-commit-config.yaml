@@ -28,3 +28,4 @@ repos:
     rev: v2.4.4
     hooks:
       - id: pip-audit
+        args: ["-l"]
