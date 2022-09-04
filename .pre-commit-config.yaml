@@ -23,3 +23,8 @@ repos:
     rev: 1.7.4
     hooks:
       - id: bandit
+
+  - repo: https://github.com/pypa/pip-audit
+    rev: v2.4.4
+    hooks:
+      - id: pip-audit
