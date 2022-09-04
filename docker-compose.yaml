@@ -8,8 +8,9 @@ services:
       target: dev
     command: python src/main.py
     entrypoint: ''
+    env_file:
+      - .env
     environment:
-      HELLO_WORLD: $HELLO_WORLD
       PIPENV_VENV_IN_PROJECT: 1
     hostname: app
     networks:
