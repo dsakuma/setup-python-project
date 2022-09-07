@@ -1,6 +1,6 @@
 # Setup Python Project
 
-This is a basic structure for Python projects.
+This is my development setup for Python projects. It is constantly updated with new settings and tools.
 
 ## Creating a project based in this strucutre
 
