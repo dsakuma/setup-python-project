@@ -1,5 +1,13 @@
 # Setup Python Project
 
+This is a basic structure for Python projects.
+
+## Create a project based in this strucutre
+
+1. Clone this repository
+2. Copy all the content (except .git folder)
+3. Rename the project in .devcontainer/devcontainer.json
+
 ## Setting up the development environment
 
 ### Prerequisites
