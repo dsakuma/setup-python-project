@@ -26,10 +26,6 @@ RUN sudo apt-get update && \
   sudo apt-get install -y \
   git \
   make
-# RUN sh -c "sudo curl -fsSL https://get.docker.com | sh"
-# RUN LATEST_COMPOSE_VERSION=$(curl -sSL "https://api.github.com/repos/docker/compose/releases/latest" | grep -o -P '(?<="tag_name": ").+(?=")') \
-#   && sudo curl -sSL "https://github.com/docker/compose/releases/download/${LATEST_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
-#   && sudo chmod +x /usr/local/bin/docker-compose
 RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
   && chown -R $USERNAME /home/$USERNAME/.vscode-server \
   && mkdir -p /home/$USERNAME/.cache/pre-commit \
