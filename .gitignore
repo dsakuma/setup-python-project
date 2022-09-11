@@ -11,3 +11,6 @@ __pycache__/
 
 # VSCode
 .vscode/*.log
+
+# Env file
+.env
