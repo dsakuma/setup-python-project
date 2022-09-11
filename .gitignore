@@ -11,6 +11,3 @@ __pycache__/
 
 # VSCode
 .vscode/*.log
-
-# Schema Validator scripts
-schema_validator/dbcheck/
