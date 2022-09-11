@@ -7,7 +7,7 @@ services:
       - setup-python-project-vscode-extensions:/home/python/.vscode-server/extensions
 
     # Overrides default command so things don't shut down after the process ends.
-    command: /bin/sh -c "while sleep 1000; do :; done"
+    command: sleep infinity
 
 volumes:
   setup-python-project-cache-pre-commit:
