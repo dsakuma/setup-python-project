@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "~=2.27"
+# requests = "~=2.27" # Example
 
 [dev-packages]
 bandit = "~=1.7.4"
