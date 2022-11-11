@@ -2,7 +2,7 @@
 
 This is my development setup for Python projects. It is constantly updated with new settings and tools.
 
-## Creating a project based in this strucutre
+## Creating a project based on this strucutre
 
 1. Clone this repository
 2. Copy all the content (except .git folder)
