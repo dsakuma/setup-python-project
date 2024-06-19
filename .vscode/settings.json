@@ -17,12 +17,12 @@
   "terminal.integrated.defaultProfile.linux": "bash",
   "[markdown]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": true
+      "source.fixAll.markdownlint": "explicit"
     }
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   }
 }
