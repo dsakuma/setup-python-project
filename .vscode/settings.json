@@ -14,7 +14,6 @@
     "tests"
   ],
   "python.testing.pytestEnabled": true,
-  "terminal.integrated.defaultProfile.linux": "bash",
   "[markdown]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": "explicit"

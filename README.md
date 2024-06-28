@@ -61,6 +61,8 @@ You will be able to run the same commands to run the application.
 
 ## Recommended extensions for vscode
 
+Create a profile than install extensions
+
 ```plain
   "tamasfe.even-better-toml",
   "davidanson.vscode-markdownlint",
